@@ -1,0 +1,17 @@
+Exercícios para a aula de laboratório (Lab. 304):
+
+1) Faça uma função que soma todos os elementos de nível ímpar em uma árvore binária simples e subtraia todos os de nível par - int misc1(TAB *a).
+
+2) Faça uma função que encontra a média simples de elementos em cada nível de uma árvore binária simples - int *media(TAB *a, int *tam_vet).
+
+3) Faça uma função que encontra todos os elementos maiores que N  em uma ABB e retorne num vetor ordenado, não utilize nenhum algoritmo de ordenação - int *maioresN(TABB *a, int N, int *tam_vet).
+
+4) Faça uma função que encontra todos os elementos menores que N em uma ABB e retorne num vetor ordenado, não utilize nenhum algoritmo de ordenação - int *menoresN(TABB *a, int N, int *tam_vet).
+
+5) Retorne o nó de maior nível que é ancestral tanto de N quanto de M - TAB* maior_nivel(TAB *a, int N, int M).
+
+6) Retorne a quantidade de caminhos que somam N em uma árvore binária simples - int quant_caminhos(TAB *a, int N).
+
+7) Faça uma função que descubra se um grafo não direcionado é cíclico - int dir_ciclico(TG *g).
+
+8) Faça uma função que descubra se um grafo não direcionado é conectado - int dir_conect(TG *g).
