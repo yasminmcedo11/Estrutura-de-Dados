@@ -1,0 +1,8 @@
+(Q4) Dados dois arquivos texto que representam conjuntos inteiros (isto é, não há elementos repetidos nos arquivos), um elemento por linha, e fazendo SOMENTE uma leitura em cada arquivo, faça cada uma das questões utilizando tabelas hash em memória secundária:
+(a) interseção dos conjuntos: void inter(char* arq1, char* arq2, char* saida);
+
+(b) diferença simétrica de conjuntos: void dif_sim(char* arq1, char* arq2, char* saida);
+
+(c) união de conjuntos: void uniao(char* arq1, char* arq2, char* saida); e
+
+(Q5) Refaça (Q4) para memória principal, recebendo no lugar de nome de arquivo, um vetor e seu tamanho (isto é, int *vet, int n).
