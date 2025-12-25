@@ -1,0 +1,5 @@
+Carlos 10.0 8.0
+Ana 8.5 7.9
+Bruno 7.0 6.5
+Diana 9.2 9.8
+Eva 5.0 6.0
