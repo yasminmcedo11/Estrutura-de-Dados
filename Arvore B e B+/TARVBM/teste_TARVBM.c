@@ -1,0 +1,59 @@
+#include "TARVBM.h"
+
+//2 50 40 30 20 10 15
+//-9 40
+//-9 50
+int main(int argc, char *argv[]){
+  TARVBM *arvore = TARVBM_inicializa();
+  int t;
+  printf("Digite o grau minimo. Se o valor digitado for menor que 2, t sera considerado igual a 2...\n");
+  scanf("%d", &t);
+  if(t < 2) t = 2;
+  int num = 0, from, to;
+  while(num != -1){
+    printf("Digite um numero para adicionar. 0 para imprimir. -9 para remover e -1 para sair\n");
+    scanf("%d", &num);
+    if(num == -9){
+      scanf("%d", &from);
+      arvore = TARVBM_retira(arvore, from, t);
+      TARVBM_imprime(arvore);
+      printf("\n\n");
+      TARVBM_imprime_chaves(arvore);
+
+    }
+    else if(num == -1){
+      printf("\n");
+      TARVBM_imprime(arvore);
+      printf("\n\n");
+      TARVBM_imprime_chaves(arvore);    
+    }
+    else if(!num){
+      printf("\n");
+      TARVBM_imprime(arvore);
+      printf("\n\n");
+      TARVBM_imprime_chaves(arvore);    
+    }
+    else arvore = TARVBM_insere(arvore, num, t);
+    printf("\n\n");
+  }
+
+  //int elem, sucessor;
+  //printf("Digite o elemento que deseja descobrir o sucessor: \n");
+  //scanf("%d", &elem);
+  //sucessor = suc (arvore, elem);
+  //printf("O sucessor de %d e: %d", elem, sucessor);
+
+  //TARVBM *max = maior(arvore);
+  //TARVBM *min = menor(arvore);
+  //printf("Maior = %d; Menor = %d.\n", max->chave[max->nchaves-1], min->chave[0]);
+  //TARVBM *a = retira_pares(arvore);
+  //TARVBM_imprime(arvore);
+  //printf("\n\n");
+  int qtd_folha = nf(arvore);
+  int qtd_interno = ni(arvore);
+  printf("A arvore possui %d nos folha e %d nos internos.\n", qtd_folha, qtd_interno);
+  TARVBM_imprime_chaves(arvore);
+
+  TARVBM_libera(arvore);
+  return 0;
+}
